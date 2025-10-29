@@ -153,7 +153,9 @@ public class GUI extends javax.swing.JFrame {
             double resultado = calc.dividir(num1, num2);
 
             jTextPaneResultado.setText("Resultado: " + resultado);
-
+            
+            jTextResultado.append(num1 + "/" + num2 + " = " resultado +"\n");
+            //Historico das operações
         } catch (NumberFormatException ex){
             jTextPaneResultado.setText("Digite valores numéricos");
         }catch (ArithmeticException ex) {
